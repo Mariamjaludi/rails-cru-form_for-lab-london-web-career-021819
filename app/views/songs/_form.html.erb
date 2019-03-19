@@ -1,0 +1,12 @@
+<%= form_for @song do |f| %>
+  <%= f.label :name, 'Enter the song name' %>
+  <%= f.text_field :name %>
+  <br><br>
+  <%= f.label :artist_id, 'Enter the artist id' %>
+  <%= f.number_field :artist_id %>
+  <br><br>
+  <%= f.label :genre_id, 'Enter the genre id' %>
+  <%= f.number_field :genre_id %>
+  <br><br>
+  <%= f.submit %>
+<% end %>
